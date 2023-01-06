@@ -1,1 +1,42 @@
-/* Add CSS styling here */
+header{
+    background-color: lightgrey;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+footer{
+	background-color: lightgrey;
+	text-align: center;
+	padding: 20px;
+}
+.topsection{
+	display: flex;
+	flex-direction: row;
+}
+.description{
+	padding: 5%;
+}
+.row{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2%;
+	
+}
+.img1{
+	text-align: center;
+}
+button{
+	background-color: white;
+	padding: 7px 20px;
+	color: black;
+	border: black solid 1px;
+}
+button:hover{
+	background-color: black;
+	color: white;
+	border: white solid 1px;
+}
+button a{
+	text-decoration: none;
+	color: inherit;
+}
