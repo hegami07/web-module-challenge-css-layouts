@@ -1,1 +1,115 @@
-/* Add CSS styling here */
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+
+}
+header{
+    background-color: lightgrey;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+footer{
+	background-color: lightgrey;
+	text-align: center;
+	padding: 20px;
+}
+.topsection{
+	display: flex;
+	flex-direction: row;
+}
+.description{
+	padding: 5%;
+}
+.row{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2%;
+	
+}
+.img1{
+	text-align: center;
+}
+button{
+	background-color: white;
+	padding: 7px 20px;
+	color: black;
+	border: black solid 1px;
+}
+button:hover{
+	background-color: black;
+	color: white;
+	border: white solid 1px;
+}
+button a{
+	text-decoration: none;
+	color: inherit;
+}
+
+@media (max-width:800px) {
+	.row div{
+		width: 20%;
+	}
+	.topsection img{
+		width: 40%;
+		margin-left: 3%;
+	}
+	.description{
+		margin-left: 10%;
+	}
+	.description button{
+		margin: 5% 0;
+	}
+	
+}
+@media (max-width:500px) {
+	header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+	}
+	.cont1{
+		display: flex;
+		flex-direction: column;
+		width: 20%;
+		margin-top: 2%;
+	}
+	.topsection{
+		flex-direction: column;
+		text-align: center;
+	}
+	.topsection img{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	.description{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		margin-right: 10%;
+	}
+	.description button{
+		margin-left: 30%;
+		width: 40%;
+		
+	}
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.row div{
+		width: 40%;
+		margin: 4% 0;
+	}
+	
+	footer button{
+		margin: 4% 0;
+	}
+}
